@@ -21,7 +21,8 @@ var npcs        = require('./lib/npcs.js').setMap(map).setSocket(io).setPlayers(
 var server_port = parseInt(process.argv[2], 10) || 80; // most OS's will require sudo to listen on 80
 var server_host = process.argv[3] || null;
 
-var mongo_connection_string = 'mongodb://127.0.0.1:27017/terraformia';
+var mongo_connection_string = 'mongodb://userLJN:S7ByIsefmfllxGyi@mongodb/sampledb';
+var mongo_pass = 'S7ByIsefmfllxGyi'
 
 
 map.connect(mongo_connection_string, function(err) {
